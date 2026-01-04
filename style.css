@@ -1,19 +1,21 @@
+/* largeer is an invalid property vaule. Changed vaule to larger. */
 p {
-  font-size: largeer; /* Console warning: Invalid property value */
+  font-size: larger; /* Console warning: Invalid property value */
 }
-
+/* font size needed a - */
 h1 {
-  fontsize: 23xp;
+  font-size: 23xp;
   color: purple;
 }
-
-.contianer {
-  colro: red;
+/* container was mispelled. */
+.container {
+  color: red;
   width: 500px;
   height: 500px;
   /* background should be the same as #output */
-  background-color: #f3SupeCoolColor;
+  background-color: #f0f0f0;
 }
+/* changed background-color to be the same as #output. */
 
 #output {
   color: #000;
@@ -21,7 +23,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
-  pudding: 10px;
+  padding: 10px;
   border: 1px solid #000;
   background-color: #f0f0f0;
 }

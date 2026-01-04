@@ -9,7 +9,7 @@ Instructions:
     * Double-check for any missing or extra characters that might be disrupting the code's structure.
 */
 let message = "Hello, World!";
-//console.log(message; // SyntaxError: Unexpected token ';'
+console.log(message) // repalced the ; in console.log(message) with a )
 
 // 2. ReferenceError: myVariable is not defined
 /*
@@ -19,7 +19,8 @@ Instructions:
     * Verify the spelling of the variable name in both the declaration and the usage.
     * Ensure that the variable is declared before it's used.
 */
-//console.log(myVariable); // ReferenceError: myVariable is not defined
+let myVariable = "42"
+console.log(myVariable); // gave myVariable a vaule, therfore declaring it a variable.
 
 // 3. TypeError: greeting is not a function
 /*
@@ -31,7 +32,7 @@ Instructions:
     * If you need to use the variable greeting, then use it as a variable, not a function.
 */
 const greeting = "Hello";
-//greeting(); // TypeError: greeting is not a function
+console.log(greeting); // removed the nested () in console.log, making greeting not a function. 
 
 // 4. TypeError: Cannot read property 'property' of undefined
 /*
@@ -41,8 +42,8 @@ Instructions:
     * Make sure the variable has been assigned an object before you attempt to access its properties.
     * If you expect the variable to hold an object, you may need to add code that assigns an object to the variable.
 */
-let obj;
-//console.log(obj.property); // TypeError: Cannot read property 'property' of undefined
+let obj = {property: "value"};
+console.log(obj.property); // defined property with "vaule"
 
 // 5. Incorrect Object Concatenation
 /*
@@ -53,11 +54,11 @@ Instructions:
     * Remember that the console.log() function can take multiple arguments, and will display them all.
 */
 const user = {
-    name: "John",
-    age: 30,
+  name: "John",
+  age: 30,
 };
 
-//console.log("User info: " + user); // Output: User info: [object Object]
+console.log(`User info: Name: ${user.name}, Age: ${user.age}`);; // Outputs readable user information.
 
 // 6. Casting Failure (Incorrect Type Conversion)
 /*
@@ -69,4 +70,4 @@ Instructions:
     * Be aware that if the string that is being converted to a number, is not a number, then the result will be NaN.
 */
 let num = "10";
-//console.log(num + 5); // "105"
+console.log(Number(num) + 5) // Converts the string to a number before adding.
